@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mylena Alves — Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Cabeçalho ===== -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <h1 class="logo">Mylena Alves</h1>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="themeToggle" class="btn small" aria-label="Alternar tema">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Sobre mim ===== -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre mim</h2>
+
+        <div class="sobre-conteudo">
+          <img
+            src="https://avatars.githubusercontent.com/u/197414011?v=4"
+            alt="Foto de Mylena Alves sorrindo"
+            class="profile-img"
+          />
+
+          <div class="sobre-texto">
+            <p>
+              Olá! Sou a <strong>Mylena Alves</strong>, apaixonada por tecnologia e desenvolvimento web.
+              Tenho experiência com HTML, CSS e JavaScript, certificação em Engenharia de Requisitos & Gestão Ágil
+              e estou me especializando em React.
+            </p>
+            <p>
+              Acredito que programar é uma forma de arte. Fora do código, gosto de ler, viajar e conhecer novas
+              culturas — cada experiência me torna uma desenvolvedora mais criativa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projetos ===== -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2>Projetos</h2>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img src="./imagens/Captura de Tela 2025-08-25 às 23.51.59.png" alt="Prévia Projeto 1" class="card-img" />
+            <div class="card-body">
+              <h3 class="card-title">E-commerce Gamer</h3>
+              <p class="card-text">Desenvolvido com HTML, CSS, JavaScript e Node.js, o projeto foca em interface intuitiva, experiência consistente em diferentes telas e funcionalidades dinâmicas.</p>
+              <div class="card-actions">
+                <a class="btn" href="projeto_um.html">Ver página</a>
+                <a class="btn btn-outline" target="_blank" rel="noopener" href="https://www.linkedin.com/posts/mylena-luz-733017176_desenvolvimentoweb-frontend-html-activity-7232441574918361089-4BZC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmmJFcBV2jUQoBjbQpfOnXd2Nm6LGJbYHE">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="./imagens/Captura de Tela 2025-08-26 às 01.36.51.png" alt="Prévia Projeto 2" class="card-img" />
+            <div class="card-body">
+              <h3 class="card-title">To-Do App</h3>
+              <p class="card-text">Lista de tarefas com filtros e persistência local.</p>
+              <div class="card-actions">
+                <a class="btn" href="projeto_dois.html">Ver página</a>
+                <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/seu-usuario/projeto-dois">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="./imagens/Captura de Tela 2025-08-26 às 01.57.56.png" alt="Prévia Projeto 3" class="card-img" />
+            <div class="card-body">
+              <h3 class="card-title">Mães & Patas </h3>
+              <p class="card-text">Projeto social para ong de animais</p>
+              <div class="card-actions">
+                <a class="btn" href="projeto_tres.html">Ver página</a>
+                <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/seu-usuario/projeto-tres">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contato (Formulário) ===== -->
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <p class="muted">Preencha o formulário abaixo. Um pop-up pedirá confirmação antes de enviar.</p>
+
+        <form id="contatoForm" class="form">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="tel" placeholder="+55 (xx) xxxxx-xxxx" />
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="contact-list">
+        <li><a href="tel:+5541988247728">+55 (41) 98824-7728</a></li>
+        <li><a href="mailto:mylenadaluzalves@gmail.com">mylenadaluzalves@gmail.com</a></li>
+        <li><a href="https://github.com/MylenaLuz" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mylena-luz-733017176/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+      <p class="copy">© <span id="ano"></span> Mylena Alves — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Modal (vidro translúcido + bordas profundas) ===== -->
+  <div id="confirmModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <h3>Confirmar envio</h3>
+      <p>Tem certeza de que deseja enviar esta mensagem por e-mail?</p>
+      <div class="modal-actions">
+        <button id="cancelBtn" class="btn btn-outline">Cancelar</button>
+        <button id="confirmBtn" class="btn">Sim, enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Scripts ===== -->
+  <script>
+    // Ano no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // Tema (claro/escuro) com persistência
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    if (saved) root.setAttribute('data-theme', saved);
+
+    themeToggle.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', current);
+      localStorage.setItem('theme', current);
+    });
+
+    // Modal de confirmação do envio
+    const form = document.getElementById('contatoForm');
+    const modal = document.getElementById('confirmModal');
+    const confirmBtn = document.getElementById('confirmBtn');
+    const cancelBtn = document.getElementById('cancelBtn');
+
+    let pendingFormData = null; // armazena dados enquanto confirma
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault(); // não envia ainda
+      // captura dados do formulário
+      const dados = {
+        nome: form.nome.value.trim(),
+        telefone: form.telefone.value.trim(),
+        email: form.email.value.trim(),
+        mensagem: form.mensagem.value.trim(),
+      };
+      pendingFormData = dados;
+      openModal();
+    });
+
+    function openModal() {
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    cancelBtn.addEventListener('click', closeModal);
+
+    // Confirma e envia via mailto (sem backend)
+    confirmBtn.addEventListener('click', () => {
+      if (!pendingFormData) return;
+      const para = "mylenadaluzalves@gmail.com";
+      const assunto = encodeURIComponent("Contato pelo Portfólio");
+      const corpo = encodeURIComponent(
+        `Nome: ${pendingFormData.nome}\nTelefone: ${pendingFormData.telefone}\nE-mail: ${pendingFormData.email}\n\nMensagem:\n${pendingFormData.mensagem}`
+      );
+      // Abre o cliente de e-mail do usuário já com o texto montado
+      window.location.href = `mailto:${para}?subject=${assunto}&body=${corpo}`;
+      closeModal();
+      form.reset();
+      pendingFormData = null;
+    });
+
+    // Fecha modal clicando fora
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+  </script>
+</body>
+</html>

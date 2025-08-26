@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto 3 — Mylena Alves</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <h1 class="logo">Mylena Alves</h1>
+      <nav class="nav">
+        <a href="index.html#projetos">← Voltar</a>
+      </nav>
+      <button id="themeToggle" class="btn small" aria-label="Alternar tema">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Mães & Patas </h2>
+        <p class="muted">projeto social para ong de adoção responsável de animais abandonados, sendo landing page, com galeria de fotos, formulario de adoção e contatos</p>
+
+        <!-- galeria simples -->
+        <div class="cards-grid" style="margin-top:16px;">
+          <img class="card-img" src="./imagens/Captura de Tela 2025-08-26 às 01.57.34.png" alt="Imagem 1 do projeto" />
+          <img class="card-img" src="./imagens/Captura de Tela 2025-08-26 às 01.57.56.png" alt="Imagem 2 do projeto" />
+          <img class="card-img" src="./imagens/Captura de Tela 2025-08-26 às 01.58.09.png" alt="Imagem 3 do projeto" />
+        </div>
+
+        <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-outline" href="https://github.com/seu-usuario/projeto-um" target="_blank" rel="noopener">Ver código no GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // mesmo toggle de tema da home
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    if (saved) root.setAttribute('data-theme', saved);
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const current = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', current);
+      localStorage.setItem('theme', current);
+    });
+  </script>
+</body>
+</html>
